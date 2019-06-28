@@ -18,7 +18,7 @@ module.exports = (router) => {
 
 	// POST: get new meeting member document
 	router.post('/team', (req, res) => {
-		let member = new Standup(req.body)
+		let member = new TeamMember(req.body)
 		member.save((err, member) => {
 			if (err) {
 				return res.status(400).json(err)
