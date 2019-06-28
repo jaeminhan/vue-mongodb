@@ -1,4 +1,5 @@
 const Standup = require('../../models/standup');
+const mongoose = require('mongoose');
 
 module.exports =  (router) => {
 	// GET: the 12 newest stand-up meeting notes
